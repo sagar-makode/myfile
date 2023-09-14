@@ -1,0 +1,92 @@
+/* Home.css */
+
+.home-container {
+    position: relative;
+    width: 100%;
+
+    max-width: 900px;
+    /* Limit the container's maximum width */
+    margin: 0 auto;
+    /* Center the container horizontally */
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    /* Allow the image to maintain its aspect ratio */
+    position: relative;
+}
+
+.overlay-container {
+    background: #fff;
+    border-left: px solid #f6f6f8;
+    border-top: 1px solid #f6f6f8;
+    display: flex;
+    width: 100%;
+    position: relative;
+    -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1);
+    margin-top: -90px;
+    flex: 1;
+    min-width: 100px; /* Adjust as needed */
+    
+
+    
+}
+
+
+.card {
+    background-color: white;
+    padding: 15px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.tools {
+    
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+   
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 0 20px 42px;
+    /* Reduce the padding on smaller screens */
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+    /* .tools {
+        flex-direction: row; 
+        justify-content: center; 
+        margin-top: -40px; 
+    } */
+
+    .overlay-container {
+        position: relative;
+        /* Reset the positioning */
+
+        /* left: auto; */
+        transform: none;
+        margin-left: auto;
+        
+
+        margin-top: -40px;
+        min-width: 250px;  /* Full width for smaller screens */
+    }
+
+}
